@@ -1,0 +1,14 @@
+h1 {
+  color: blue !important;
+  background-color: chartreuse !important;
+}
+
+p {
+  color: brown;
+  background-color: bisque;
+}
+
+h1 {
+  color: yellow;
+  background-color: red;
+}
