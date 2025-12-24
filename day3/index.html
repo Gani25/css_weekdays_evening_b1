@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector More</title>
+
+    <style>
+        /* Descendent Selector */
+        /* .main-parent h1 {
+            color: rgb(255, 128, 0);
+            background-color: aqua;
+            border: 2px solid red;
+        } */
+
+        /* Direct child -> Child Combinator */
+        .main-parent>h1 {
+            color: rgb(255, 128, 0);
+            background-color: aqua;
+            border: 2px solid red;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            background-color: violet;
+        }
+
+        h1[heading] {
+            color: green;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-parent">
+        <h1 heading>Heading, 1st Child of MAIN-PARENT</h1>
+        <p>paragraph 2nd Child OF MAIN PARENT</p>
+        <h1>Heading, 3rd Child of MAIN-PARENT</h1>
+        <h1>Heading, 4th Child of MAIN-PARENT</h1>
+        <div class="inner-parent">
+            <p>paragraph in inner parent, 1st child of inner parent</p>
+            <h1>Heading in inner parent, 2nd child of inner parent </h1>
+        </div>
+
+        <h1>Heading, 5th Child of MAIN-PARENT</h1>
+    </div>
+
+    <input type="text" placeholder="Enter First Name" name="" id="">
+    <input type="text" placeholder="Enter Last Name" name="" id="">
+    <input type="password" placeholder="Enter password" name="" id="">
+
+</body>
+
+</html>

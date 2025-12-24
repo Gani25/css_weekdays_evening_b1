@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Elements Selector</title>
+    <style>
+        button {
+            border: none;
+            color: aliceblue;
+            background-color: #974d4d;
+        }
+
+        /* Pseudo Class : */
+        button:hover {
+            background-color: #8d0e0e;
+        }
+
+        h1 {
+            cursor: pointer;
+        }
+
+        h1:hover {
+            color: aqua;
+            background-color: red;
+            text-decoration: wavy underline blue;
+        }
+
+        input {
+            border: none;
+        }
+
+        /* input:focus-visible {
+            border: none;
+            outline: none;
+        } */
+
+        input:focus-visible {
+            border: 2px solid green;
+            outline: none;
+        }
+
+        input:active {
+            border: 3px solid red;
+        }
+
+        input[type="checkbox"]:checked+label {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* .box:nth-of-type(2) {
+            border: 2px solid green;
+        } */
+        /* .box:nth-of-type(2n) {
+            border: 2px solid green;
+        } */
+        .box:nth-of-type(even) {
+            border: 2px solid green;
+        }
+
+        .box:nth-of-type(odd) {
+            border: 2px solid rgb(4, 0, 128);
+            background-color: antiquewhite;
+        }
+
+
+        /*Pseudo Elements :: */
+        .first-para::first-letter {
+            font-size: 60px;
+        }
+
+        .second-para::first-line {
+            color: red;
+            font-size: 30px;
+        }
+
+        .second-para span {
+            font-weight: bold;
+        }
+
+        .second-para::selection {
+            background-color: #8d0e0e;
+            color: cyan;
+
+        }
+
+        input::placeholder {
+            color: green;
+        }
+
+        input {
+            color: red;
+        }
+
+        button::after {
+            content: "Profile";
+        }
+
+        button::before {
+            content: "great";
+        }
+
+        /* Multiple Selector */
+        #wrapper,
+        .container {
+            width: 50%;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo Class Selector (:)</h1>
+
+    <button>Click Me</button>
+
+    <input type="text" placeholder="Enter Name" name="name" id="fn">
+
+    <input type="checkbox" name="skill" id="sk"> <label for="">Java</label>
+    <input type="checkbox" name="skill" id="sk"> <label for="">Python</label>
+    <input type="checkbox" name="skill" id="sk"> <label for="">C++</label>
+    <input type="checkbox" name="skill" id="sk"> <label for="">Excel</label>
+
+    <div class="box">First</div>
+    <div class="box">Second</div>
+    <div class="box">Third</div>
+    <div class="box">Fourth</div>
+    <div class="box">Fifth</div>
+    <div class="box">Sixth</div>
+
+    <p class="first-para">Hello I am Learning CSS</p>
+
+    <p class="second-para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo eius repellat modi, voluptatem doloribus
+        optio at, necessitatibus hic nisi quae mollitia aliquam nam esse deserunt quibusdam vel in tenetur.
+        Ipsam harum expedita maxime recusandae fuga repellendus rem aut sed, distinctio eum enim eligendi ea placeat
+        ratione molestias quae delectus repellat ab impedit mollitia odio! Culpa totam dicta quidem voluptatibus?
+        Temporibus vel veritatis adipisci voluptate in qui illo nihil iure id dolor asperiores, quas cumque laboriosam
+        fugit nam molestias. <span>Quod a amet aperiam,</span> ullam ea dolor magni maiores quae est.
+        Eos rem impedit explicabo velit, magnam ipsam. Et, ratione inventore enim earum ducimus vero tempore qui
+        cupiditate quo sequi, accusantium iusto officia eos libero reiciendis, reprehenderit esse? Excepturi, ex quo.
+        Dolorem tempora minima nam iusto impedit nulla voluptas quod a deserunt, sunt modi aspernatur ullam, libero
+        debitis! Nostrum fugiat dolor reprehenderit explicabo rerum modi animi odio iusto reiciendis incidunt! Unde.
+    </p>
+
+    <button>Save</button>
+
+
+    <div id="wrapper">
+
+    </div>
+
+    <div class="container">
+
+    </div>
+
+</body>
+
+</html>
