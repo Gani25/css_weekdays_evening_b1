@@ -1,0 +1,61 @@
+#hero {
+  background-color: rgb(218, 196, 90);
+  width: 60%;
+  height: 150px;
+  border: 10px solid orange;
+  overflow-y: scroll;
+}
+
+.main {
+  background-color: rgb(230, 215, 113);
+  width: 60%;
+  height: 200px;
+  border: 5px solid rgb(255, 0, 0);
+}
+
+body div.main {
+  background-color: purple;
+  width: 80%;
+  height: 100px;
+}
+
+.main p[description] {
+  background-color: green;
+  color: whitesmoke;
+}
+
+.main .desc {
+  background-color: brown;
+  color: turquoise;
+}
+
+p {
+  color: red;
+  font-size: 26px;
+  background-color: aqua;
+  font-weight: bold;
+}
+
+.main p {
+  color: orange;
+  background-color: bisque;
+}
+.main p.desc {
+  background-color: black;
+  color: azure;
+}
+
+#hero p {
+  color: tomato;
+  background-color: teal;
+}
+
+#hero .desc {
+  color: slateblue;
+  background-color: white;
+}
+
+#hero p[description] {
+  color: black;
+  background-color: wheat;
+}
